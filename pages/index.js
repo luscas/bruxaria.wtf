@@ -75,17 +75,17 @@ const Index = () => {
       height="100vh"
       columns={1}
       mt={{
-        sm: "16",
+        base: "16",
         lg: "0"
       }}
       placeItems={{
-        sm: "start",
+        base: "start",
         lg: "center"
       }}
     >
       <Container
         px={{
-          sm: "8",
+          base: "8",
           lg: "0"
         }}
         maxW={{
@@ -94,7 +94,7 @@ const Index = () => {
       >
         <Flex
           direction={{
-            sm: "column",
+            base: "column",
             lg: "row"
           }}
           alignItems="start"
@@ -104,8 +104,9 @@ const Index = () => {
             borderRadius="lg"
             width="45px"
             height="45px"
+            flexShrink="0"
             boxSize={{
-              sm: "45px",
+              base: "45px",
               lg: "120px"
             }}
             draggable={false}
@@ -114,7 +115,7 @@ const Index = () => {
           <Flex
             direction="column"
             mt={{
-              sm: "10",
+              base: "10",
               lg: "0"
             }}
             ml={{
@@ -128,11 +129,11 @@ const Index = () => {
           <form onSubmit={handleContact}>
             <Flex
                 direction={{
-                sm: "column",
+                base: "column",
                 lg: "row"
               }}
               alignItems={{
-                sm: "flex-start",
+                base: "flex-start",
                 lg: "flex-end"
               }}
             >
@@ -156,11 +157,11 @@ const Index = () => {
                 color="#fff"
                 borderRadius="lg"
                 mt={{
-                  sm: "4",
+                  base: "4",
                   lg: "0"
                 }}
                 ml={{
-                  sm: "0",
+                  base: "0",
                   lg: "4"
                 }}
                 _hover={{ background: 'purple.800'}}
